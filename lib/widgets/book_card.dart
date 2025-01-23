@@ -7,12 +7,12 @@ class BookCard extends StatelessWidget {
   final double price;
 
   const BookCard({
-    Key? key,
+    super.key,
     required this.coverImagePath,
     required this.title,
     required this.author,
     required this.price,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
