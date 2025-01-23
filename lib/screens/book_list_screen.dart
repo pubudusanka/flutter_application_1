@@ -16,7 +16,7 @@ class BookListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Book Store'),
+        title: Text('Sarasavi Book Store'),
       ),
       body: Center(
         child: ListView.builder(

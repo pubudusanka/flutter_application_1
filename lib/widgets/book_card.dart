@@ -53,8 +53,8 @@ class BookCard extends StatelessWidget {
             Center(
               child: Image.asset(
                 imagePath,
-                height: 120,
-                width: 120,
+                height: 200,
+                width: 200,
                 fit: BoxFit.cover,
               ),
             ),
