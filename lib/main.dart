@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
+import 'screens/book_list_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const BookStoreApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class BookStoreApp extends StatelessWidget {
+  const BookStoreApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const BookListScreen(),
     );
   }
 }
