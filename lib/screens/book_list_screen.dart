@@ -2,25 +2,37 @@ import 'package:flutter/material.dart';
 import '../widgets/book_card.dart';
 
 class BookListScreen extends StatelessWidget {
-  const BookListScreen({Key? key}) : super(key: key);
+  final List<Map<String, String>> books = [
+    {
+      'title': 'Rich Dad Poor Dad',
+      'author': 'Robert Kiyosaki',
+      'image': 'lib/assets/images/rich_dad_poor_dad.png',
+      'price': '\$12.49',
+      'rating': '4.7',
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ceylon Bookstore'),
-        backgroundColor: Colors.blueGrey,
+        title: Text('Book Store'),
       ),
-      body: SafeArea(
-        child: ListView(
-          children: const [
-            BookCard(
-              coverImagePath: 'lib/assets/images/rich_dad_poor_dad.png',
-              title: 'Rich Dad, Poor Dad',
-              author: 'Robert T. Kiyosaki',
-              price: 1250.00,
-            ),
-          ],
+      body: Center(
+        child: ListView.builder(
+          itemCount: books.length,
+          itemBuilder: (context, index) {
+            final book = books[index];
+            return Center(
+              child: BookCard(
+                title: book['title']!,
+                author: book['author']!,
+                imagePath: book['image']!,
+                price: book['price']!,
+                rating: book['rating']!,
+              ),
+            );
+          },
         ),
       ),
     );
