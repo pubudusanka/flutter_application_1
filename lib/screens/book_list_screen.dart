@@ -15,19 +15,19 @@ class BookListScreen extends StatelessWidget {
         child: ListView(
           children: const [
             BookCard(
-              coverImagePath: 'assets/images/rich-dad-poor-dad.jpg',
+              coverImagePath: 'assets/images/rich-dad-poor-dad.png',
               title: 'Rich Dad, Poor Dad',
               author: 'Robert T. Kiyosaki',
               price: 1250.00,
             ),
             BookCard(
-              coverImagePath: 'assets/images/the-alchemist.jpg',
+              coverImagePath: 'assets/images/the-alchemist.png',
               title: 'The Alchemist',
               author: 'Paulo Coelho',
               price: 1800.00,
             ),
             BookCard(
-              coverImagePath: 'assets/images/men-are-from-mars.jpg',
+              coverImagePath: 'assets/images/men-are-from-mars.png',
               title: 'Men Are From Mars',
               author: 'John Gray',
               price: 1000.00,
