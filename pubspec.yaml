@@ -17,9 +17,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-flutter:
   assets:
-    - assets/images/rich-dad-poor-dad.jpg
-    - assets/images/the-alchemist.jpg
-    - assets/images/men-are-from-mars.jpg
+    - lib/assets/images/rich_dad_poor_dad.png
